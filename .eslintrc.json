@@ -1,3 +1,6 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals", // core-web-vitalsも考慮したより厳しい設定
+    "prettier" // prettierも一緒に使う場合、設定がバッティングしないようにするために必要
+  ]
 }
