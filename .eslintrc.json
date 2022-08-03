@@ -2,5 +2,9 @@
   "extends": [
     "next/core-web-vitals", // core-web-vitalsも考慮したより厳しい設定
     "prettier" // prettierも一緒に使う場合、設定がバッティングしないようにするために必要
-  ]
+  ],
+  "rules": {
+    // セミコロンない場合、エラー出力
+    "semi": ["error", "always"]
+  }
 }
